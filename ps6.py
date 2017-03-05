@@ -229,6 +229,9 @@ class CiphertextMessage(Message):
 
 
 def decrypt_story():
+    """
+    returns the appropriate shift value and unencrypted story string
+    """
     message_encrypted = CiphertextMessage(get_story_string())
     return message_encrypted.decrypt_message()
 
